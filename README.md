@@ -52,6 +52,7 @@ The microservice responds with data in JSON format. To programmatically receive 
 **Successful Response**
 * If the microservice successfully retrieves data from a random Wikipedia page, it will respond with the content of that page.
 * The TestProgram will receive and display the retrieved data.
+
 **Error Handling**
 * If there is an error while retrieving data from the microservice, the microservice will respond with an error status code.
 * The TestProgram will display the error status code.
