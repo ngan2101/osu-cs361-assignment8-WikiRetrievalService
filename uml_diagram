@@ -1,0 +1,117 @@
+<mxfile host="app.diagrams.net" modified="2024-05-14T02:08:28.961Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36" etag="9pqCJPi5yHPIEh9DwMvy" version="24.4.0" type="device">
+  <diagram name="Page-1" id="13e1069c-82ec-6db2-03f1-153e76fe0fe0">
+    <mxGraphModel dx="1434" dy="746" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" background="#ffffff" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="7baba1c4bc27f4b0-2" value="Wikipedia Content Retrieval Service" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;rounded=1;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=12;align=center;" parent="1" vertex="1">
+          <mxGeometry x="440" y="160" width="130" height="360" as="geometry" />
+        </mxCell>
+        <mxCell id="1Xzd79k9HLhs1RW0dZCi-9" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=12;align=center;" vertex="1" parent="7baba1c4bc27f4b0-2">
+          <mxGeometry x="60" y="120" width="10" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="1Xzd79k9HLhs1RW0dZCi-26" value="opt" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="7baba1c4bc27f4b0-2">
+          <mxGeometry x="70" y="280" width="30" height="15" as="geometry" />
+        </mxCell>
+        <mxCell id="7baba1c4bc27f4b0-3" value="Wikipedia API" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;rounded=1;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=12;align=center;" parent="1" vertex="1">
+          <mxGeometry x="710" y="160" width="100" height="360" as="geometry" />
+        </mxCell>
+        <mxCell id="1Xzd79k9HLhs1RW0dZCi-10" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=12;align=center;" vertex="1" parent="7baba1c4bc27f4b0-3">
+          <mxGeometry x="45" y="160" width="10" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="7baba1c4bc27f4b0-8" value="Test Program" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;rounded=1;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=12;align=center;" parent="1" vertex="1">
+          <mxGeometry x="210" y="160" width="100" height="360" as="geometry" />
+        </mxCell>
+        <mxCell id="1Xzd79k9HLhs1RW0dZCi-1" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=12;align=center;" vertex="1" parent="7baba1c4bc27f4b0-8">
+          <mxGeometry x="45" y="50" width="10" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="7baba1c4bc27f4b0-11" value="Send POST request to &quot;/search&quot;" style="html=1;verticalAlign=bottom;endArrow=block;labelBackgroundColor=none;fontFamily=Verdana;fontSize=12;edgeStyle=elbowEdgeStyle;elbow=vertical;" parent="1" edge="1">
+          <mxGeometry x="0.0054" relative="1" as="geometry">
+            <mxPoint x="259.5" y="280" as="sourcePoint" />
+            <mxPoint x="504.5" y="280" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="7baba1c4bc27f4b0-14" value="Generate random Wikipedia page title" style="html=1;verticalAlign=bottom;endArrow=block;labelBackgroundColor=none;fontFamily=Verdana;fontSize=12;edgeStyle=elbowEdgeStyle;elbow=vertical;" parent="1" source="7baba1c4bc27f4b0-2" target="7baba1c4bc27f4b0-3" edge="1">
+          <mxGeometry x="0.0041" relative="1" as="geometry">
+            <mxPoint x="540" y="280" as="sourcePoint" />
+            <mxPoint x="740" y="280" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="640" y="280" />
+            </Array>
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1Xzd79k9HLhs1RW0dZCi-15" value="Responds with data in JSON format" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;labelBackgroundColor=none;fontFamily=Verdana;fontSize=12;edgeStyle=elbowEdgeStyle;elbow=horizontal;" edge="1" parent="1">
+          <mxGeometry x="-0.0609" relative="1" as="geometry">
+            <mxPoint x="260" y="400" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="410.5" y="400" />
+              <mxPoint x="440.5" y="400" />
+            </Array>
+            <mxPoint x="500.5" y="400" as="sourcePoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1Xzd79k9HLhs1RW0dZCi-4" value="Return random page title" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;labelBackgroundColor=none;fontFamily=Verdana;fontSize=12;edgeStyle=elbowEdgeStyle;elbow=vertical;" edge="1" parent="1" source="7baba1c4bc27f4b0-3" target="7baba1c4bc27f4b0-2">
+          <mxGeometry x="-0.0612" relative="1" as="geometry">
+            <mxPoint x="560" y="360" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="590" y="320" />
+              <mxPoint x="645" y="360" />
+              <mxPoint x="675" y="360" />
+            </Array>
+            <mxPoint x="750" y="360" as="sourcePoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1Xzd79k9HLhs1RW0dZCi-19" value="Retrieve content of random page" style="html=1;verticalAlign=bottom;endArrow=block;labelBackgroundColor=none;fontFamily=Verdana;fontSize=12;edgeStyle=elbowEdgeStyle;elbow=vertical;entryX=0.49;entryY=0.558;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="7baba1c4bc27f4b0-2" target="7baba1c4bc27f4b0-3">
+          <mxGeometry x="-0.0224" relative="1" as="geometry">
+            <mxPoint x="520" y="360" as="sourcePoint" />
+            <mxPoint x="730" y="360" as="targetPoint" />
+            <Array as="points" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1Xzd79k9HLhs1RW0dZCi-20" value="Return page content" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;labelBackgroundColor=none;fontFamily=Verdana;fontSize=12;edgeStyle=elbowEdgeStyle;elbow=vertical;" edge="1" parent="1" source="7baba1c4bc27f4b0-3" target="7baba1c4bc27f4b0-2">
+          <mxGeometry x="-0.0612" relative="1" as="geometry">
+            <mxPoint x="520" y="400" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="605" y="400" />
+              <mxPoint x="660" y="440" />
+              <mxPoint x="690" y="440" />
+            </Array>
+            <mxPoint x="765" y="400" as="sourcePoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1Xzd79k9HLhs1RW0dZCi-25" value="Return error status code" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;labelBackgroundColor=none;fontFamily=Verdana;fontSize=12;edgeStyle=elbowEdgeStyle;elbow=vertical;" edge="1" parent="1" source="7baba1c4bc27f4b0-3" target="7baba1c4bc27f4b0-2">
+          <mxGeometry x="-0.0612" relative="1" as="geometry">
+            <mxPoint x="530" y="480" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="630" y="480" />
+              <mxPoint x="685" y="520" />
+              <mxPoint x="715" y="520" />
+            </Array>
+            <mxPoint x="775" y="480" as="sourcePoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1Xzd79k9HLhs1RW0dZCi-27" value="[error with generating &amp;amp; retrieving data]" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="530" y="432.5" width="230" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="1Xzd79k9HLhs1RW0dZCi-29" value="Responds with error status code" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;labelBackgroundColor=none;fontFamily=Verdana;fontSize=12;edgeStyle=elbowEdgeStyle;elbow=horizontal;" edge="1" parent="1">
+          <mxGeometry x="-0.0603" relative="1" as="geometry">
+            <mxPoint x="260" y="480" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="410.5" y="480" />
+              <mxPoint x="440.5" y="480" />
+            </Array>
+            <mxPoint x="500.5" y="480" as="sourcePoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
