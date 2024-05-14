@@ -59,14 +59,15 @@ The microservice responds with data in JSON format. To programmatically receive 
 ## UML Diagram
 Below is the UML sequence diagram showing the interactions between the Test Program, the Wikipedia Content Retrieval Microservice, and Wikipedia API:
 
-![UML Sequence Diagram](UML%20Diagram.drawio.png)
+![UML Sequence Diagram](uml_diagram.png)
 
 ### Diagram Explanation
-1. **User Interaction**: The User enters a search keywords in the Web UI and submits it.
-2. **Web UI to Web Server**: The Web UI captures the input and sends a request to the Web Server with the search term.
-3. **Web Server to Wikipedia Content Retrieval Service**: The Web Server sends a request to the Wikipedia Content Retrieval Service.
-4. **Data Retrieval**: Wikipedia Content Retrieval Service processes the request, returns the search results (content), and posts the results back to the Wev Server.
-5. **Response to User**: The Web Server receives the Wikipedia data, formats it, and sends it back to the Web UI, which then displays the results to the User.
+1. **Test Program Interaction**: The TestProgram sends a POST request to the Microservice.
+2. **Wikipedia Content Retrieval Microservice to Wikipedia API**: Microservice sends a POST request to the Wikipedia API to generate a random Wikipedia page title.
+3. **Wikipedia API Response to Wikipedia Content Retrieval Microservice**: Wikipedia API returns a random page title to the Microservice.
+4. **Wikipedia Content Retrieval Microservice to Wikipedia API**: Microservice sends a request to the Wikipedia API to retrieve the content of the random page.
+5. **Wikipedia API Response to Wikipedia Content Retrieval Microservice**: Wikipedia API returns the content of the random page to the Microservice.
+6. **Wikipedia Content Retrieval Microservice Response to Test Program**: Microservice responds with data in JSON format to the TestProgram.
 
 
 
